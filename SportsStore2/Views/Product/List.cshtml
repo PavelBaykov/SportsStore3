@@ -1,0 +1,16 @@
+﻿@using Models
+
+@model IEnumerable<Product>
+
+@{
+    ViewBag.Title = "List";
+}
+
+@foreach (var prod in Model)
+{
+    <h2>@prod.Name</h2>
+    <h4>@prod.Price</h4>
+    <h4>@prod.Description</h4>
+}
+
+
